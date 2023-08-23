@@ -3,7 +3,7 @@ const API_KEY = "live_IPGWMc0smi2mGOtLyn6asDLlGVcOFazNNkfXj4KIh0ayOxisCysSyUU13k
 axios.defaults.headers.common['x-api-key'] = API_KEY;
 
 const fetchBreeds = () => {
-    return axios.get(`https://api.thecatapi.com/v1/breeds123`)
+    return axios.get(`https://api.thecatapi.com/v1/breeds`)
 };
 
 const fetchCatByBreed = (breedId) => {
