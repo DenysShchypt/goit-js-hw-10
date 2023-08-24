@@ -4,6 +4,7 @@ export default function getRefs() {
         catInfo: document.querySelector('.cat-info'),
         loader: document.querySelector('.loader'),
         error: document.querySelector('.error'),
-        options: document.querySelector('.ss-search')
+        options: document.querySelector('.ss-search'),
+        choiceBreed: document.createElement('p')
     };
 }
