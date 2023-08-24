@@ -1,13 +1,14 @@
-.breed-select-js {
+.breed-select-hiden {
   display: none;
 }
-.breed-select {
+.breed-select-activ {
   display: inline-block;
   max-width: 350px;
   margin-left: 25px;
   font-size: 20px;
   font-weight: 400;
 }
+
 .select-cat {
   margin-bottom: 15px;
   margin-left: 25px;

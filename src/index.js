@@ -5,9 +5,7 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api'
 import getRefs from "./get-refs";
 
 const refs = getRefs();
-refs.select.classList.toggle('breed-select-js');
 refs.select.addEventListener("change", setOutput);
-
 
 fetchBreeds().then(renderCatsBreeds).catch(error => {
     console.log(error);
@@ -28,7 +26,7 @@ function renderCatsBreeds(cats) {
 function selectIsActive(markupSelect) {
     if (markupSelect) {
         refs.select.insertAdjacentHTML('beforeend', markupSelect);
-        refs.select.classList.toggle('breed-select-js');
+        refs.select.classList.replace('breed-select-hiden','breed-select-activ');
         refs.loader.classList.toggle('loader');
         addElementHint()
     };
